@@ -1,0 +1,37 @@
+import java.util.*;
+public class Tasktwo{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the each subject marks obtained out of 100");
+        int maths= sc.nextInt();
+        int biology= sc.nextInt();
+        int chemistry= sc.nextInt();
+        int physics= sc.nextInt();
+        int kannada= sc.nextInt();
+        int english= sc.nextInt();
+        int total=maths+biology+physics+chemistry+kannada+english;
+        System.out.println("The total marks is:"+" "+total);
+        double percentage=(double)total/600*100;
+        System.out.println( "The  average percentage is:"+" "+percentage+ " %");
+        if(percentage>=90){
+            System.out.println(" you got A grade");
+        }
+        else if(percentage>=80 ){
+            System.out.println("You got B grade");
+        }
+        else if(percentage>=70 ){
+            System.out.println("You got c grade");
+        }
+        else if(percentage>=60 ){
+            System.out.println("you got D grade");
+        }
+        else {
+            System.out.println("You got E garde");
+        }
+        System.out.println("Congratualations for obtaining"+" "+percentage);
+        
+    }
+
+}
+
+    
